@@ -67,7 +67,7 @@ dependencies:
   flutter:
     sdk: flutter
   provider: ^6.0.0
-  supabase_flutter: ^1.4.0
+  supabase_flutter: ^2.10.3
   uuid: ^3.0.6
   intl: ^0.18.0
 ```
