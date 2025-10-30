@@ -547,7 +547,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   itemCount: chat.messages.length,
                   itemBuilder: (context, i) {
                     final m = chat.messages[i];
-                    final isMe = m.userId == auth._supabase.auth.currentUser?.id;
+                    final isMe = m.userId == auth.supabase.auth.currentUser?.id;
                     return ChatBubble(message: m, isMe: isMe);
                   },
                 );
@@ -555,24 +555,37 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
           ),
           SafeArea(
-            child: Row(children: [
-              Expanded(child: TextField(controller: msgCtrl, decoration: InputDecoration(hintText: 'Tulis pesan...'))),
-              IconButton(
-                icon: Icon(Icons.send),
-                onPressed: () async {
-                  if (msgCtrl.text.isEmpty) return;
-                  await Provider.of<ChatProvider>(context, listen: false)
-                      .sendMessage(auth._supabase.auth.currentUser!.id, msgCtrl.text);
-                  msgCtrl.clear();
-                },
-              )
-            ]),
+            child: Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    controller: msgCtrl,
+                    decoration: InputDecoration(hintText: 'Tulis pesan...'),
+                  ),
+                ),
+                IconButton(
+                  icon: Icon(Icons.send),
+                  onPressed: () async {
+                    if (msgCtrl.text.isEmpty) return;
+                    await Provider.of<ChatProvider>(
+                      context,
+                      listen: false,
+                    ).sendMessage(
+                      auth.supabase.auth.currentUser!.id,
+                      msgCtrl.text,
+                    );
+                    msgCtrl.clear();
+                  },
+                ),
+              ],
+            ),
           ),
         ],
       ),
     );
   }
 }
+
 ```
 
 ---
