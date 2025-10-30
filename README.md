@@ -691,8 +691,12 @@ Coba di dua perangkat untuk melihat chat realtime.
 
 | No | Fitur              | Keterangan                  | Nilai |
 | -- | ------------------ | --------------------------- | ----- |
-| 1  | Register & Login   | Autentikasi Supabase        | 20    |
-| 2  | Chat Room          | Bubble kanan-kiri           | 30    |
-| 3  | Daftar Anggota     | Menampilkan semua user      | 20    |
-| 4  | Logout             | Keluar dan kembali ke login | 10    |
-| 5  | UI & Struktur Kode |                             |       |
+| 1  | Register & Login   | Autentikasi Supabase        | 05    |
+| 2  | Chat Room          | Bubble kanan-kiri           | 05    |
+| 3  | Daftar Anggota     | Menampilkan semua user      | 05    |
+| 4  | Logout             | Keluar dan kembali ke login | 05    |
+| 1  | Running            | Berfungsi Seluruhnya        | 15    |
+| 2  | Jelaskan 1         | Register &n Login           | 20    |
+| 3  | Jelaskan 2         | Chat Room                   | 20    |
+| 4  | Jelaskan 3         | Daftar Anggota              | 20    |
+| 1  | Jelaskann 4        | Logout                      | 05    |
