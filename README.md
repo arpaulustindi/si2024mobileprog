@@ -8,7 +8,7 @@
 
 ---
 
-## 🎯 Tujuan
+##  Tujuan
 
 Membangun aplikasi chat group menggunakan Flutter dan Supabase dengan fitur:
 
