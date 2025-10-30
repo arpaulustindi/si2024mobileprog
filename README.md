@@ -1,6 +1,3 @@
-Berikut file panduan lengkap siap dibagikan ke mahasiswa.
-
----
 
 #Panduan Praktik Flutter: Aplikasi Chat Group (Supabase + Provider)
 
